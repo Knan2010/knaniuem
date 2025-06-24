@@ -3,10 +3,14 @@ Nhập tên: <input id="inp" value>
 <br>
  <button onclick="hello()">OK</button>
 <div id="loi_chao"></div>
+<img id="anh_chao" src="" style="display:none;" width="150">
 <script>
   var hello=function() {
     var ten=document.getElementById("inp").value
     var loi_chao="Xin chào "+ten
     document.getElementById("loi_chao").innerHTML=loi_chao
+    var img = document.getElementById("anh_chao");
+    img.src = "fukada.jpg"; 
+    img.style.display = "block";
   }
 </script>
