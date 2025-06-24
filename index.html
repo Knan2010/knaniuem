@@ -1,7 +1,12 @@
-<!DOCTYPE html>
-<html>
-    <body>
-        KNAN<br><br>
-        <img src="beckham LN.png" style="width: 50%;">
-    </body>
-</html>
+<head></head>
+Nhập tên: <input id="inp" value>
+<br>
+ <button onclick="hello()">OK</button>
+<div id="loi_chao"></div>
+<script>
+  var hello=function() {
+    var ten=document.getElementById("inp").value
+    var loi_chao="Xin chào "+ten
+    document.getElementById("loi_chao").innerHTML=loi_chao
+  }
+</script>
